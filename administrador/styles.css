@@ -74,7 +74,7 @@ body {
     background-color: white;
     border-color: #ffffff;
     color: #000000;
-    margin: 25px;
+    margin: 20px;
 }
 
 .container form {
@@ -247,4 +247,8 @@ body {
     height: 2px;
     background-color: #ff0097;
     
+}
+
+.container .volver{
+
 }
