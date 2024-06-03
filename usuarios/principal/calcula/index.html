@@ -6,6 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Nómina</title>
     <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #E5245D;
+    background: linear-gradient(to right, #e2e2e2, #E5245D);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+.container button {
+background-color: #ff0097;
+color: #fff;
+font-size: 12px;
+padding: 10px 45px;
+border: 1px solid transparent;
+border-radius: 8px;
+font-weight: 600;
+letter-spacing: 0.5px;
+text-transform: uppercase;
+margin-top: 10px;
+cursor: pointer;
+transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+
+.container button:hover {
+background-color: #e60084; 
+color: #000000; 
+transform: scale(1.1); 
+}
+
+
+.container button.hidden{
+background-color: white;
+border-color: #fff;
+color: #000000;
+margin: 20px;
+}
+
+.container form{
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 40px;
+height: 100%;
+}
+
+
+
+
+
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -92,9 +178,18 @@
             <option value="hora">Hora</option>
         </select>
 
-        <button onclick="calcularNomina()">Calcular Nómina</button>
+            <div class="form-container sign-in">
+                <button onclick="calcularNomina()">Calcular Nómina</button>
+          
+        </div>
+
+        
+
 
         <p id="resultado"></p>
+
+        <div class="form-container sign-in">
+           <a href="/usuarios/principal/index.html"> <button type="button">Regresar</button></a>
     </div>
 
     <script>
@@ -117,9 +212,16 @@
                 }
             }
 
-            document.getElementById("resultado").innerText = "El salario bruto de " + nombreEmpleado + " es: $" + salarioBruto.toFixed(2);
+            document.getElementById("resultado").innerText = "El salario bruto aproximado es de " + nombreEmpleado + " es: $" + salarioBruto.toFixed(2);
         }
     </script>
+
+
+
 </body>
 
 </html>
+
+
+
+  
