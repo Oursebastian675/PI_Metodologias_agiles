@@ -11,17 +11,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+
 }
 
-body {
-    background-color: #E5245D;
-    background: linear-gradient(to right, #e2e2e2, #E5245D);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-}
 
 .container{
     background-color: #fff;
@@ -70,27 +62,6 @@ transform: scale(1.1);
 }
 
 
-.container button.hidden{
-background-color: white;
-border-color: #fff;
-color: #000000;
-margin: 20px;
-}
-
-.container form{
-background-color: #fff;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-padding: 0 40px;
-height: 100%;
-}
-
-
-
-
-
 
         body {
             font-family: Arial, sans-serif;
@@ -115,7 +86,7 @@ height: 100%;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            width: 300px;
+            width: 500px;
         }
 
         h1 {
@@ -157,10 +128,23 @@ height: 100%;
             font-weight: bold;
             text-align: center;
         }
+        .h {
+    position: relative;
+}
+
+.im {
+    position: absolute;
+    left: 350px;
+}
+
     </style>
 </head>
 
+
 <body>
+    <div class="h">
+    <img class="im" src="Logo cesde blanco.png" alt="" width="400">
+</div>
     <div class="container">
         <h1>Calculadora de Nómina</h1>
         <label for="nombreEmpleado">Nombre del Empleado:</label>
