@@ -249,6 +249,9 @@ body {
     
 }
 
-.container .volver{
-
+.container .in{
+    align-items: center;
+}
+.te{
+    text-align: center;
 }
