@@ -117,13 +117,7 @@
         <form action="#" method="post">
             <h4>Nuevo registro</h4>
             <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <div class="form-group">
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
-            </div>
+                
             <div class="form-group">
                 <label for="tipo_documento">Tipo de Documento:</label>
                 <select id="tipo_documento" name="tipo_documento" required>
@@ -138,15 +132,25 @@
                 <input type="number" id="numero_documento" name="numero_documento" required>
             </div>
             <div class="form-group">
-                <label for="apellido">Correo empresarial:</label>
-                <input type="email" id="apellido" name="apellido" required>
+                <label for="tipo_contrato">Tipo de Contrato:</label>
+                <select id="tipo_contrato" name="tipo_contrato" required>
+                    <option value="">Seleccionar...</option>
+                    <option value="Tiempo Completo">Tiempo Completo</option>
+                    <option value="Tiempo Parcial">Tiempo Parcial</option>
+                    <option value="Contrato por Obra o Servicio">Contrato por Obra o Servicio</option>
+                    <option value="Prácticas">Prácticas</option>
+                </select>
             </div>
             <div class="form-group">
-                <label for="apellido">Contraseña</label>
-                <input type="password" id="apellido" name="apellido" required>
+                <label for="salario_base">Salario Base:</label>
+                <input type="number" id="salario_base" name="salario_base" required>
             </div>
-    
+            <div class="form-group">
+                <label for="fecha_ingreso">Fecha de Ingreso:</label>
+                <input type="date" id="fecha_ingreso" name="fecha_ingreso" required>
+            </div>
             <button type="submit">Enviar</button>
+            
         </form>
     </div>
 
