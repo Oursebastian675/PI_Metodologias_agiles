@@ -24,32 +24,21 @@
             justify-content: center;
             flex-direction: column;
             height: 100vh;
+            font-size: 12.5px;
         }
 
         .container {
             background-color: #fff;
             border-radius: 20px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-            position: relative;
+            position: absolute;
             overflow: hidden;
             width: 700px;
             max-width: 100%;
-            padding: 20px;
+            padding: 10px;
         }
 
-        .container p {
-            font-size: 14px;
-            line-height: 20px;
-            margin: 20px 0;
-        }
-
-        .container a {
-            color: #333;
-            font-size: 13px;
-            text-decoration: none;
-            margin: 15px 0 10px;
-        }
-
+        
         .container button {
             background-color: #ff0097;
             color: #fff;
@@ -142,16 +131,35 @@
                 </select>
             </div>
             <div class="form-group">
+                <label for="fecha_ingreso">Fecha de Ingreso:</label>
+                <input type="date" id="fecha_ingreso" name="fecha_ingreso" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="fecha_final">Fecha termino del contrato:</label>
+                <input type="date" id="fecha_final" name="fecha_final" required>
+            </div>
+            <div class="form-group">
                 <label for="salario_base">Salario Base:</label>
                 <input type="number" id="salario_base" name="salario_base" required>
             </div>
             <div class="form-group">
-                <label for="fecha_ingreso">Fecha de Ingreso:</label>
-                <input type="date" id="fecha_ingreso" name="fecha_ingreso" required>
+                <label for="Extras_diurnas">Horas extras diurnas:</label>
+                <input type="number" id="Extras_diurnas" name="Extras_diurnas" required>
             </div>
+            <div class="form-group">
+                <label for="Extras_nocturnas">Horas extras nocturnas:</label>
+                <input type="number" id="Extras_nocturnas" name="Extras_nocturnas" required>
+            </div>
+            <div class="form-group">
+                <label for="vacaciones">Dia vacaciones acumuladas:</label>
+                <input type="number" id="vacaciones" name="vacaciones" required>
+            </div>
+            
             <button type="submit">Enviar</button>
             
         </form>
+    </div>
     </div>
 
     <div class="toggle-container">
